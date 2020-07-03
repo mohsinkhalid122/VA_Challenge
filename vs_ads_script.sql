@@ -346,7 +346,7 @@ va_ads2 t2
 ON t1.patient=t2.patient and t1.encounter=t2.encounter and t1."date"=(t2."date"+ INTERVAL '1' DAY)
 LEFT JOIN cs_scores lab on lab.patient=t1.patient and lab.encounter=t1.encounter and lab."date"=t1."date"+ INTERVAL '1' DAY
 )  WITH DATA PRIMARY INDEX ("Date","Patient", "Encounter")
-;
+; 
 
 
 
