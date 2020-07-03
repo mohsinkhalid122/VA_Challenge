@@ -34,7 +34,7 @@ WHEN CODE IN ('9279-1') then 'RespRate'
 WHEN CODE IN ('33914-3') then 'GFR'
 --Lactic Acid missing
 --PTT missing
-END AS CS_LABEL
+END AS CS_LABEL 
 
 from va_observation_test obs 
 WHERE CODE IN (
