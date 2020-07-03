@@ -324,7 +324,7 @@ SELECT patient, max(cs_score) as cs_score
 from va_ads_with_labels_final
 group by 1 
 ) ds on ds.patient=mo.patient
-) WITH DATA PRIMARY INDEX ("patient");
+) WITH DATA PRIMARY INDEX ("patient"); 
 
 
  ----------------------------------------------------------------------------------------------------  FINAL VIEWS FOR CSV 
